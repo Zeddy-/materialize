@@ -856,6 +856,7 @@
 
     _handleYearChange(e) {
       this.gotoYear(e.target.value);
+      this.setDate(new Date(this.date.setFullYear(e.target.value)));
     }
 
     /**
